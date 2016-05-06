@@ -1,0 +1,25 @@
+{
+  "name": "react-webpack-stylus-starter",
+  "version": "0.0.1",
+  "description": "Minimal starter pack for React hack",
+  "keywords": [
+    "react",
+    "webpack",
+    "starter"
+  ],
+  "author": "Aetet",
+  "license": "MIT",
+  "dependencies": {
+    "react": "~0.11.1"
+  },
+  "devDependencies": {
+    "webpack": "~1.3.3-beta2",
+    "connect": "^2.25.7",
+    "jsx-loader": "~0.11.0",
+    "node-notifier": "~3.1.3",
+    "gulp": "~3.8.7",
+    "gulp-concat": "2.2.0",
+    "gulp-stylus": "~1.3.0",
+    "tiny-lr": "^0.1.0"
+  }
+}
