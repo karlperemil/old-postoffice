@@ -5,6 +5,8 @@ var Notifier = require('node-notifier');
 var concat = require('gulp-concat');
 var connect = require('connect');
 var lr = require('tiny-lr')();
+var nib = require('nib');
+var jeet = require('jeet');
 
 var myDevConfig = require('./webpack.config.js');
 
@@ -45,7 +47,7 @@ gulp.task("webpack-dev-server", function(callback) {
 //Build all stylus files and and create main.css under public/css folder
 gulp.task('styles', function () {
   gulp.src(paths.stylus)
-    .pipe(stylus())
+    .pipe(stylus({use: [nib(), jeet()] }))
     .pipe(concat('main.css'))
     .pipe(gulp.dest('public/css'));
 });
